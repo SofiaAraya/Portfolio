@@ -1,7 +1,9 @@
 @font-face {
     font-family: 'PleaseWriteMeASong';
-    src: url('fonts/PleaseWriteMeASong.woff2') format('woff2'),
+    /* src: url('fonts/PleaseWriteMeASong.woff2') format('woff2'),
          url('fonts/PleaseWriteMeASong.woff') format('woff');
+    */
+    src: url('fonts/PleaseWriteMeASong.ttf');
     font-weight: normal;
     font-style: normal;
 }
