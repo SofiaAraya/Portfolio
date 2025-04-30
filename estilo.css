@@ -1,18 +1,24 @@
-@font-face {
+/* @font-face {
     font-family: 'PleaseWriteMeASong';
-    /* src: url('fonts/PleaseWriteMeASong.woff2') format('woff2'),
+     src: url('fonts/PleaseWriteMeASong.woff2') format('woff2'),
          url('fonts/PleaseWriteMeASong.woff') format('woff');
-    */
+    
     src: url('fonts/PleaseWriteMeASong.ttf');
     font-weight: normal;
     font-style: normal;
-}
+}  */
 
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/* :root{
+  --Tipografia-jua: "Jua", sans-serif;
+} */
 * {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    font-family: 'PleaseWriteMeASong', sans-serif;
+    /* font-family: var(--Tipografia-jua); */
+    font-family: 'Nunito', sans-serif;
 }
       body{
         background: linear-gradient(360deg, #3e7b5d 0%, rgba(235, 235, 235, 1) 16%, rgba(235, 235, 235, 1) 87%,  #3e7b5d 100%);
@@ -52,12 +58,12 @@
         color:  #3e7b5d;
         text-decoration: none;
         font-size: 2.5vw;
-        margin: 10vh;
+        margin: 2vh;
     }
 
     nav ul li a.active {
-        border-bottom: 2px solid #EBEBEB; /* Subrayado */
-        color: #EBEBEB; /* Cambiás también color si querés */
+        border-bottom: 2px solid #EBEBEB; 
+        color: #EBEBEB; 
       }
 
     .portada {
@@ -75,7 +81,7 @@
       
       /* Al pasar el mouse cambia */
       .portada:hover {
-        background-image: url('img/portada-12.png'); /* Acá ponés la otra imagen */
+        background-image: url('img/portada-12.png'); 
       }
     .titulo{
         display: flex;
@@ -128,23 +134,23 @@
             font-size: 3.5rem;
             text-decoration: none;
             border-radius: 1rem;
-            box-shadow: 8px 8px 0 #3e7b5d; /* sombra verde normal */
+            box-shadow: 8px 8px 0 #3e7b5d; 
             margin-top: 1rem;
             transition: all 0.2s ease; /* transición suave */
-            position: relative; /* necesario para moverlo */
+            position: relative; 
           }
           
           /* Cuando pasás el mouse */
           .boton:hover {
-            box-shadow: none; /* quita la sombra */
-            top: 4px; /* mueve el botón hacia abajo 4px */
-            left: 4px; /* mueve el botón hacia la derecha 4px */
+            box-shadow: none; 
+            top: 4px; 
+            left: 4px; 
           }
           
           /* Cuando hacés click */
           .boton:active {
-            background-color: #3e7b5d; /* cambia color de fondo */
-            color: #ffffff; /* cambia color del texto */
+            background-color: #3e7b5d;
+            color: #ffffff; 
           }
           
 #PROYECTOS{
@@ -256,46 +262,7 @@ form {
       opacity: 1;
     }
   }
-  
-  /* MEDIA QUERY para celulares */
-  @media (min-width: 0px) and (max-width: 580px) {
-    nav ul {
-      display: none;
-      flex-direction: column;
-      background-color: #B1D0C0;
-      border-radius: 20px;
-      position: absolute;
-      top: 10vh;
-      left: 10vw;
-      right: 10vw;
-      padding: 2rem;
-      text-align: center;
-  
-      animation-name: rotacion1;
-      animation-duration: 0.5s;
-      animation-play-state: running;
-      animation-fill-mode: forwards;
-      animation-iteration-count: 1;
-      animation-timing-function: ease;
-      transform-origin: top center;
-    }
-  
-    nav ul.active {
-      display: flex;
-    }
-  
-    .menu-toggle {
-      display: block;
-    }
-  
-    nav {
-      position: relative;
-      height: auto;
-      padding: 2vh;
-      width: 90vw;
-    }
-  }
-
+ 
   .foto-cambiante {
     width: 40vh; 
     height: 40vh;
@@ -312,4 +279,18 @@ form {
     33% { background-image: url('img/mifoto-24.png'); }
     66% { background-image: url('img/mifoto-25.png'); }
     100% { background-image: url('img/mifoto-23.png'); }
+  }
+
+  @media (min-width:0px) and (max-width:580px){
+	
+  
+  }
+  
+  @media (min-width:581px) and (max-width:990px){
+
+  
+  }
+  
+  @media (min-width:991px){
+    
   }
