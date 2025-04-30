@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ani</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Please+write+me+a+song&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="idvisual.html">IDENTIDAD VISUAL</a></li>
+                <li><a href="uxui.html">DISEÑO UX/UI</a></li>
+                <li><a href="ani.html" class="active">ANIMACIÓN 3D</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="botonflecha">
+    <a href="index.html">
+        <img src="img/botonflecha-20.png" alt="botonflecha">
+      </a>
+<section class="gravityfalls">
+      <div class="titulo">
+        <h1>GRAVITY FALLS</h1>
+    </div>
+
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="img/segundafoto.png" alt="Foto 1">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/tercerafoto.png" alt="Foto 2">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/cuartafoto.png" alt="Foto 3">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/quintafoto.png" alt="Foto 4">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/sextafoto.png" alt="Foto 5">
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+
+    <section class="mario">
+      <div class="titulo">
+        <h1>MARIO BROS</h1>
+    </div>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="img/render1.png" alt="Foto 1">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/render2.png" alt="Foto 2">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/render3.png" alt="Foto 3">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/render4.png" alt="Foto 4">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/render5.png" alt="Foto 5">
+          </div>
+        </div>
+         
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+      
+    
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      
+      <script>
+        const swiper = new Swiper('.swiper', {
+          loop: true,
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          slidesPerView: 1,
+          centeredSlides: true,
+          spaceBetween: 30,
+        });
+      </script>
+     </body>

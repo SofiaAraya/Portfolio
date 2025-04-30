@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolioaraya</title>
+ <link rel="stylesheet" href="estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Please+write+me+a+song&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+            <ul>
+                <li><a href="#SOBREMI">SOBRE MI</a></li>
+                <li><a href="#PROYECTOS">PROYECTOS</a></li>
+                <li><a href="#CONTACTO">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="portada"></div>
+    <div class="titulo">
+    <h1>SOBRE MI</h1>
+</div>
+    <section id="SOBREMI">
+        <div class="mifoto">
+            <div class="foto-cambiante"></div>
+        </div>
+    <div class="yo">
+        <h2>Hola!</h2>
+        <p>Soy Sofía, diseñadora multimedial enfocada en crear soluciones visuales innovadoras.Me apasiona transformar ideas en diseños claros, funcionales y creativos. Además, me encanta colaborar en proyectos que involucren redes sociales, branding y contenido digital.Soy una persona comprometida y siempre dispuesta a aprender, con ganas de aplicar mis habilidades en nuevos proyectos.</p>
+    </div>
+    </section>
+    <div class="skills">
+        <h2>SKILLS</h2>
+        <div class="iconos">
+            <img src="img/icnonobarra-15.png" alt="">
+            <img src="img/icnonobarra-16.png" alt="">
+            <img src="img/icnonobarra-17.png" alt="">
+            <img src="img/icnonobarra-18.png" alt="">
+            <img src="img/icnonobarra-19.png" alt="">
+        </div>
+    </div>
+    <section id="PROYECTOS">
+        <h2>¿Querés ver lo que hago?</h2>
+        <a href="idvisual.html" class="boton">MIS PROYECTOS</a>
+    </section>
+    <section id="CONTACTO">
+        <div class="titulo">
+            <h1>CONTACTAME</h1>
+        </div>
+<p>Mandame tu consulta y te responderé a la brevedad.</p>
+<form>
+    <input type="text" placeholder="NOMBRE" required>
+    <input type="text" placeholder="APELLIDO" required>
+    <input type="email" placeholder="EMAIL" required>
+    <input type="tel" placeholder="TELÉFONO" required>
+  
+    <select required>
+      <option disabled selected>ME INTERESA</option>
+      <option>Identidad Visual</option>
+      <option>Diseño UX/UI</option>
+      <option>Animación 3D</option>
+    </select>
+  
+    <textarea placeholder="CONSULTA" required></textarea>
+  
+    <button type="submit">ENVIAR</button>
+  </form>
+
+    </section>
+
+    <script>
+        const toggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('nav ul');
+      
+        toggle.addEventListener('click', () => {
+          navLinks.classList.toggle('active');
+        });
+      </script>
+    </body>
+
+</html>
