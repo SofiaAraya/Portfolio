@@ -10,14 +10,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
-/* :root{
-  --Tipografia-jua: "Jua", sans-serif;
-} */
+
 * {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    /* font-family: var(--Tipografia-jua); */
     font-family: 'Nunito', sans-serif;
 }
       body{
@@ -25,7 +22,7 @@
       }
       h1{font-size:5vw; 
     color:  #3e7b5d;}
-      h2{font-size:2.5vw;
+      h2{font-size:3vw;
         color:  #3e7b5d; }
         h3{font-size:1.5vw;
           color:  #EBEBEB; }
@@ -115,15 +112,11 @@
     width: 96vw;
   
  }
- .iconos img{
-    display: flex;
-    flex-direction: row;
-    width: 20vw;
-    height: auto;
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 1vh;}
+ .iconos img {
+  width: 20vw;        
+  height: auto;
+  margin: 0.5rem;
+}
 
 .iconos {display: flex;
         flex-wrap: wrap;}
@@ -263,7 +256,7 @@ align-items: center; }
     margin-left: auto;
   }
   
-  /* ANIMACIÓN que se usará */
+  /* ANIMACIÓN*/
   @keyframes rotacion1 {
     from {
       transform: rotateX(90deg);
@@ -384,9 +377,39 @@ align-items: center; }
   }
   
   @media (min-width:581px) and (max-width:990px){
-
-  
+    .boton {
+      display: inline-block;
+      background-color: #ffeecc;
+      color: #2d5c46;
+      padding: 1rem 3rem;
+      font-size: 2.5rem;
+      text-decoration: none;
+      border-radius: 1rem;
+      box-shadow: 8px 8px 0 #3e7b5d; 
+      margin-top: 1rem;
+      transition: all 0.2s ease; /* transición suave */
+      position: relative; 
+    }
+    
+    /* Cuando pasás el mouse */
+    .boton:hover {
+      box-shadow: none; 
+      top: 4px; 
+      left: 4px; 
+    }
+    
+    /* Cuando hacés click */
+    .boton:active {
+      background-color: #3e7b5d;
+      color: #ffffff; 
   }
+  .iconos img {
+    width: 25vw;        
+    height: auto;
+    margin: 0.5rem;
+  }
+  p{font-size:2vw;}
+}
   
   @media (min-width:991px){
     
