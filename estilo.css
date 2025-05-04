@@ -95,7 +95,8 @@
 }
     
 .mifoto img{
-    width: 40vh; 
+    width: 40%; 
+    max-width:250px ;
     margin-right: 2vw;
 }
 .yo{
@@ -246,7 +247,7 @@ align-items: center; }
   .gravityfalls{margin-bottom: 10vh;}
   .mario{margin-bottom: 10vh;}
 
-  .menu-toggle {
+  /* .menu-toggle {
     display: none;
     font-size: 2rem;
     background: none;
@@ -254,7 +255,7 @@ align-items: center; }
     cursor: pointer;
     color: #3e7b5d;
     margin-left: auto;
-  }
+  } */
   
   /* ANIMACIÓN*/
   @keyframes rotacion1 {
@@ -377,6 +378,18 @@ align-items: center; }
   }
   
   @media (min-width:581px) and (max-width:990px){
+    .portada {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 70vh;
+      width: 100%;
+      background-image: url('img/portada-11.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      transition: background-image 0.5s ease;
+    }
     .boton {
       display: inline-block;
       background-color: #ffeecc;
@@ -408,7 +421,11 @@ align-items: center; }
     height: auto;
     margin: 0.5rem;
   }
-  p{font-size:2vw;}
+  p{font-size:2.2vw;}
+  .foto-cambiante {
+    width: 35vh;
+    height: 35vh;
+  }
 }
   
   @media (min-width:991px){
