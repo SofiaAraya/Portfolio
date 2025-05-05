@@ -282,7 +282,7 @@ align-items: center; }
   
 
   footer {
-    padding: 2rem 1rem;
+    padding: 1rem 0.5rem;
     background-color: #ffeecc;
     display: flex;
     flex-direction: column;
@@ -298,7 +298,7 @@ align-items: center; }
     width: 100%;
     max-width: 900px;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 1rem;
   }
   
   .bloque-footer {
@@ -365,7 +365,7 @@ align-items: center; }
     color: #3e7b5d;
   }
 
-  /* Animación para cambiar las fotos */
+  /* Animación para cambiar las fotos mias*/
   @keyframes cambiarFoto {
     0% { background-image: url('img/mifoto-23.png'); }
     33% { background-image: url('img/mifoto-24.png'); }
@@ -374,11 +374,51 @@ align-items: center; }
   }
 
   @media (min-width:0px) and (max-width:580px){
+    h1{font-size:5vw; 
+      color:  #3e7b5d;}
+        h2{font-size:1.2rem;
+          color:  #3e7b5d; }
+          h3{font-size:1.5vw;
+            color:  #EBEBEB; }
+        p{font-size: 3vw;}
+        header{
+          display: flex;
+          align-items: center;
+      justify-content: center;}
+      nav {
+          background-color: #B1D0C0;
+          padding: 5vh;
+          display: flex;   
+          align-items: center;    
+      height: 0.2vh;
+      width: 80vw;
+      margin-top: 5px;
+      margin-bottom: 2px;
+      border-radius: 20px;
+      justify-content: center;
+      }
+      
+      nav ul{ list-style: none;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        height: auto;    
+        width: 100%;
+       
+      }
+      nav ul li{
+      font-size: 3.5vw;}
+      nav ul li a{
+          color:  #3e7b5d;
+          text-decoration: none;
+          font-size: 1rem;
+          margin: 0.5vh;
+      }
 	  .portada {
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 70vh;
+      height: 40vh;
       width: 100%;
       background-image: url('img/portada-11.png');
       background-size: contain;
@@ -390,8 +430,8 @@ align-items: center; }
       display: inline-block;
       background-color: #ffeecc;
       color: #2d5c46;
-      padding: 1rem 3rem;
-      font-size: 2.5rem;
+      padding: 0.5rem 1rem;
+      font-size: 1.5rem;
       text-decoration: none;
       border-radius: 1rem;
       box-shadow: 8px 8px 0 #3e7b5d; 
@@ -399,28 +439,20 @@ align-items: center; }
       transition: all 0.2s ease; /* transición suave */
       position: relative; 
     }
-    
-    /* Cuando pasás el mouse */
-    .boton:hover {
-      box-shadow: none; 
-      top: 4px; 
-      left: 4px; 
-    }
-    
-    /* Cuando hacés click */
-    .boton:active {
-      background-color: #3e7b5d;
-      color: #ffffff; 
-  }
+    #CONTACTO{
+      margin-bottom: 10px;
+      margin-top: 0.5vh;
+      display: flex;
+      flex-direction: column;}
   .iconos img {
-    width: 25vw;        
+    width: 30vw;        
     height: auto;
     margin: 0.5rem;
   }
   p{font-size:2.2vw;}
   .foto-cambiante {
-    width: 35vh;
-    height: 35vh;
+    width: 20vh;
+    height: 20vh;
   }
   .swiper {
     height: auto; /* más adaptable */
@@ -438,6 +470,36 @@ align-items: center; }
   .gravityfalls,
   .mario {
     padding: 0rem 0;
+  }
+  .footer-contenido {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .titulo h3 {
+    font-size: 1.4rem;
+  }
+
+  .redes {
+    font-size: 2rem;
+    gap: 1rem;
+  }
+
+  .frase-footer {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .volver-arriba {
+    font-size: 1rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .marca-footer {
+    font-size: 1rem;
+    margin-top: 1.5rem;
   }
   
   }
@@ -470,24 +532,13 @@ align-items: center; }
       position: relative; 
     }
     
-    /* Cuando pasás el mouse */
-    .boton:hover {
-      box-shadow: none; 
-      top: 4px; 
-      left: 4px; 
-    }
-    
-    /* Cuando hacés click */
-    .boton:active {
-      background-color: #3e7b5d;
-      color: #ffffff; 
-  }
   .iconos img {
     width: 25vw;        
     height: auto;
     margin: 0.5rem;
   }
   p{font-size:2.2vw;}
+  
   .foto-cambiante {
     width: 35vh;
     height: 35vh;
