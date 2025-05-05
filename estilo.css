@@ -198,15 +198,6 @@ form {
     box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
   }
 
-  footer{display: flex;
-  flex-direction: row;
-justify-content: center;
-align-items: center; }
-  footer a i{
-    color: #EBEBEB;
-    height: 2vh;
-  }
-
   .trabajos{
     display: flex;
     flex-direction: column;
@@ -287,10 +278,10 @@ align-items: center; }
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: 'PleaseWriteMeASong', cursive;
     color: #2d5c46;
     width: 100%;
   }
+
   
   .footer-contenido {
     display: flex;
@@ -365,7 +356,7 @@ align-items: center; }
     color: #3e7b5d;
   }
 
-  /* Animación para cambiar las fotos mias*/
+  /* Animación para cambiar las fotos */
   @keyframes cambiarFoto {
     0% { background-image: url('img/mifoto-23.png'); }
     33% { background-image: url('img/mifoto-24.png'); }
@@ -380,7 +371,7 @@ align-items: center; }
           color:  #3e7b5d; }
           h3{font-size:1.5vw;
             color:  #EBEBEB; }
-        p{font-size: 3vw;}
+         body p{font-size: 2.5vw;}
         header{
           display: flex;
           align-items: center;
@@ -449,28 +440,19 @@ align-items: center; }
     height: auto;
     margin: 0.5rem;
   }
-  p{font-size:2.2vw;}
   .foto-cambiante {
     width: 20vh;
     height: 20vh;
   }
-  .swiper {
-    height: auto; /* más adaptable */
+  .botonflecha img{ height: 3.8vh;}
+  .trabajos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5vw;
   }
-
-  .swiper-slide img {
-    width: 90%; /* más grande en pantallas medianas */
-  }
-
-  .titulo h1 {
-    font-size: 1.8rem;
-    padding: 0.5rem 0;
-  }
-
-  .gravityfalls,
-  .mario {
-    padding: 0rem 0;
-  }
+ 
   .footer-contenido {
     flex-direction: column;
     align-items: center;
@@ -543,23 +525,8 @@ align-items: center; }
     width: 35vh;
     height: 35vh;
   }
-  .swiper {
-    height: auto; /* más adaptable */
-  }
+  .botonflecha img{ height: 4.5vh;}
 
-  .swiper-slide img {
-    width: 90%; /* más grande en pantallas medianas */
-  }
-
-  .titulo h1 {
-    font-size: 1.8rem;
-    padding: 0.5rem 0;
-  }
-
-  .gravityfalls,
-  .mario {
-    padding: 0rem 0;
-  }
   
 }
   
