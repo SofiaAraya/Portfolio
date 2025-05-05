@@ -374,7 +374,71 @@ align-items: center; }
   }
 
   @media (min-width:0px) and (max-width:580px){
-	
+	  .portada {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 70vh;
+      width: 100%;
+      background-image: url('img/portada-11.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      transition: background-image 0.5s ease;
+    }
+    .boton {
+      display: inline-block;
+      background-color: #ffeecc;
+      color: #2d5c46;
+      padding: 1rem 3rem;
+      font-size: 2.5rem;
+      text-decoration: none;
+      border-radius: 1rem;
+      box-shadow: 8px 8px 0 #3e7b5d; 
+      margin-top: 1rem;
+      transition: all 0.2s ease; /* transición suave */
+      position: relative; 
+    }
+    
+    /* Cuando pasás el mouse */
+    .boton:hover {
+      box-shadow: none; 
+      top: 4px; 
+      left: 4px; 
+    }
+    
+    /* Cuando hacés click */
+    .boton:active {
+      background-color: #3e7b5d;
+      color: #ffffff; 
+  }
+  .iconos img {
+    width: 25vw;        
+    height: auto;
+    margin: 0.5rem;
+  }
+  p{font-size:2.2vw;}
+  .foto-cambiante {
+    width: 35vh;
+    height: 35vh;
+  }
+  .swiper {
+    height: auto; /* más adaptable */
+  }
+
+  .swiper-slide img {
+    width: 90%; /* más grande en pantallas medianas */
+  }
+
+  .titulo h1 {
+    font-size: 1.8rem;
+    padding: 0.5rem 0;
+  }
+
+  .gravityfalls,
+  .mario {
+    padding: 0rem 0;
+  }
   
   }
   
@@ -443,7 +507,7 @@ align-items: center; }
 
   .gravityfalls,
   .mario {
-    padding: 1rem 0;
+    padding: 0rem 0;
   }
   
 }
